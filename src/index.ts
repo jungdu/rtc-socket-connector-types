@@ -1,18 +1,6 @@
 import { Socket } from "socket.io"
 import {Socket as ClientSocket} from "socket.io-client"
 
-export enum RTCConnectionType {
-  OFFER = "OFFER",
-  ANSWER = "ANSWER"
-}
-
-export interface Room {
-  roomId: string;
-  createdBy: string;
-  roomName: string;
-  userSocketIds: string[];
-}
-
 interface AnswerData {
   answerSocketId: string;
   answer: RTCSessionDescriptionInit;
@@ -23,7 +11,6 @@ interface CandidateData {
   candidate: RTCIceCandidate;
   destSocketId: string;
   fromSocketId: string;
-  type: RTCConnectionType;
 }
 
 interface OfferData {

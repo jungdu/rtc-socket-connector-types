@@ -1,6 +1,6 @@
 {
   "name": "rtc-socket-connector-types",
-  "version": "0.0.4",
+  "version": "0.0.8",
   "description": "Connect webRTC connection to  socket server",
   "main": "dist/index.ts",
   "types": "dist/index.d.ts",
@@ -14,6 +14,6 @@
   },
   "dependencies": {
     "socket.io": "^4.4.0",
-    "socket.io-client": "^4.4.0"
+    "socket.io-client": "^4.7.2"
   }
 }
